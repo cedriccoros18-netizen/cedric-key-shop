@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cedric Key Shop</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #10091c;
+  color: white;
+  text-align: center;
+}
+header { padding: 30px 10px; background: #210d3b; }
+h1 { color: #c084fc; }
+.products {
+  background: #211333;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+}
+.price { color: #d8b4fe; font-size: 24px; }
+button {
+  background: #9333ea;
+  color: white;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>CEDRIC KEY SHOP</h1>
+<p>Your trusted key shop</p>
+</header>
+
+<div class="products">
+<h2>1-Day Key</h2>
+<p class="price">₱15</p>
+<button onclick="order('1-Day Key',15)">Order Now</button>
+</div>
+
+<div class="products">
+<h2>2-Day Key</h2>
+<p class="price">₱20</p>
+<button onclick="order('2-Day Key',20)">Order Now</button>
+</div>
+
+<script>
+function order(product, price) {
+  const message = `Hello! I want to order ${product} for ₱${price}.`;
+  window.open(
+    'https://m.me/',
+    '_blank'
+  );
+  alert('Please message the seller and send your order: ' + message);
+}
+</script>
+</body>
+</html>
